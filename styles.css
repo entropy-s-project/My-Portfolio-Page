@@ -7,8 +7,8 @@
 /* CCS FOR ANIMATED SECTION */
 
 .animated-section {
- 
-  min-height: 50vh;
+  width: 100%;
+  min-height: 1000px;
   position: relative;
   background: #aee2ff;
 }
@@ -18,35 +18,62 @@
   position: absolute;
 }
 .body-1 {
-  width: 750px;
-  top: 225px;
-  left: 150px;
+  width: 550px;
+  top: 153px;
+  left: 70px;
 }
 .head {
-  width: 700px;
+  width: 500px;
   top: 5px;
-  left: 188px;
+  left: 100px;
 }
 .eyes-default {
-  width: 350px;
-  top: 157px;
-  left: 350px;
+  width: 265px;
+  top: 105px;
+  left: 215px;
 }
 .mouth-default {
-  width: 350px;
-  top: 496px;
-  left: 350px;
+  width: 250px;
+  top: 360px;
+  left: 220px;
 }
 
 .right-hand {
-  width: 320px;
-  top: 665px;
-  left: 170px;
+  width: 250px;
+  top: 452px;
+  left: 70px;
 }
 .left-hand {
-  width: 320px;
-  top: 665px;
-  left: 570px;
+  width: 250px;
+  top: 452px;
+  left: 350px;
+}
+/* CSS of Menu */
+.menu-section {
+  position: absolute;
+  top: 410px;
+  right: 205px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.menu-btn {
+  width: 480px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 2px solid #b5baff;
+  border-radius: 20px;
+  background: #b5baff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Indie Flower", cursive;
+  text-shadow: 1px 1px 0 white;
+  color: #ededff;
+  cursor: pointer;
+  box-shadow: 0 6px 0 #9fa1ff;
 }
 
 /* CSS FOR HERO SECTION */
