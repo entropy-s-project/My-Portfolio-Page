@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CCS FOR ANIMATED SECTION */
+
+.animated-section {
+ 
+  min-height: 50vh;
+  position: relative;
+  background: #aee2ff;
+}
+.head-section img,
+.body-section img,
+.both-hands img {
+  position: absolute;
+}
+.body-1 {
+  width: 750px;
+  top: 225px;
+  left: 150px;
+}
+.head {
+  width: 700px;
+  top: 5px;
+  left: 188px;
+}
+.eyes-default {
+  width: 350px;
+  top: 157px;
+  left: 350px;
+}
+.mouth-default {
+  width: 350px;
+  top: 496px;
+  left: 350px;
+}
+
+.right-hand {
+  width: 320px;
+  top: 665px;
+  left: 170px;
+}
+.left-hand {
+  width: 320px;
+  top: 665px;
+  left: 570px;
+}
+
+/* CSS FOR HERO SECTION */
+.hero-section {
+  width: 100%;
+  min-height: 100vh;
+  background: #d9f9df;
+}
