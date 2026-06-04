@@ -34,11 +34,20 @@ html {
   width: 265px;
   top: 105px;
   left: 215px;
+  transition: transform 0.2s ease;
+  /* display: none; */
 }
 .mouth-default {
   width: 250px;
   top: 360px;
   left: 220px;
+  /* display: none; */
+}
+.face-sleepy{
+  width: 230px;
+  top: 200px;
+  left: 222px;
+  display: none;
 }
 
 .right-hand {
@@ -73,7 +82,7 @@ html {
   font-size: 2.5rem;
   font-weight: bold;
   font-family: "Indie Flower", cursive;
-  text-shadow: 1px 1px 0 white;
+  text-shadow: 1px 1px 0 #9fa1ff;
   color: #ededff;
   gap: 10px;
   cursor: pointer;
@@ -114,11 +123,44 @@ html {
   font-size: 3.2rem;
   color: #9fa1ff;
   font-family: "Indie Flower", cursive;
+  text-shadow: 2px 2px 0 #ffffff;
 }
 .about-section p {
   font-size: 1.4rem;
   font-family: "Nunito", sans-serif;
   max-width: 650px;
-  color: #556b5d;
+  color: #6b7a6a;
+  text-shadow: 1px 0 rgba(255, 255, 255, 0.5);
   line-height: 1.7;
+}
+/* CSS FOR PROJECTS SECTION */
+.project-section {
+  width: 100%;
+  min-height: 100vh;
+  background: #aee2ff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.project-section h1 {
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  font-size: 3rem;
+  color: #9fa1ff;
+  text-shadow: 2px 2px 0 #ffffff;
+}
+.folder-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+}
+.project-folder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-folder img {
+  width: 250px;
+  cursor: pointer;
 }
