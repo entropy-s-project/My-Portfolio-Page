@@ -10,13 +10,21 @@
       href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <main>
+      <!-- FIRST PAGE -->
       <section class="animated-section">
         <!-- Character section -->
         <div class="character-side">
+          <!-- FACE -->
           <div class="head-section">
             <img class="head" src="Assets/HEAD.svg" alt="head" />
             <img
@@ -30,6 +38,7 @@
               alt="mouth"
             />
           </div>
+          <!-- BODY -->
           <div class="body-section">
             <img class="body-1" src="Assets/BODY-1.svg" alt="body-1" />
             <div class="both-hands">
@@ -48,14 +57,37 @@
         </div>
         <!-- MENU section -->
         <div class="menu-section">
-          <a href="#portfolio-hero" class="menu-btn">Portfolio</a>
+          <a href="#portfolio-hero" class="menu-btn"
+            ><img src="Assets/folder-icon.svg" alt="folder-icon" />Portfolio</a
+          >
           <a href="https://github.com/entropy-s-project" class="menu-btn"
-            >Github</a
+            ><img src="Assets/github-icon.svg" alt="github-icon" />Github</a
           >
         </div>
       </section>
+      <!-- SECOND PAGE -->
       <section id="portfolio-hero" class="hero-section">
-        <h1>Hi! this page is still in progress. Thank you for your patience</h1>
+        <div class="about-section">
+          <h1>Hi! I'm Abhilasha</h1>
+          <p>
+            A frontend developer currently building projects and improving my
+            skills in web development.
+          </p>
+          <p>
+            I enjoy creating interactive websites, experimenting with UI design,
+            and learning how things work behind the scenes.
+          </p>
+        </div>
+        <div class="about-character">
+          <img class="body-2" src="Assets/ABOUT-ME/BODY-2.svg" alt="body-2" />
+          <img class="head-2" src="Assets/ABOUT-ME/HEAD-2.svg" alt="head-2" />
+          <img class="arm" src="Assets/ABOUT-ME/ARM.svg" alt="arm" />
+          <img
+            class="happy-face-1"
+            src="Assets/ABOUT-ME/HAPPY-FACE-1.svg"
+            alt="happy-face-1"
+          />
+        </div>
       </section>
     </main>
   </body>

@@ -3,12 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* CCS FOR ANIMATED SECTION */
 
 .animated-section {
   width: 100%;
-  min-height: 1000px;
+  min-height: 100vh;
   position: relative;
   background: #aee2ff;
 }
@@ -72,8 +75,13 @@
   font-family: "Indie Flower", cursive;
   text-shadow: 1px 1px 0 white;
   color: #ededff;
+  gap: 10px;
   cursor: pointer;
   box-shadow: 0 6px 0 #9fa1ff;
+}
+.menu-btn img {
+  width: 40px;
+  height: 40px;
 }
 
 /* CSS FOR HERO SECTION */
@@ -81,4 +89,36 @@
   width: 100%;
   min-height: 100vh;
   background: #d9f9df;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-character {
+  position: relative;
+  width: 450px;
+  height: 500px;
+}
+.about-character img {
+  position: absolute;
+}
+.body-2,
+.head-2,
+.arm,
+.happy-face-1 {
+  width: 400px;
+  top: -40px;
+  right: 20px;
+}
+
+.about-section h1 {
+  font-size: 3.2rem;
+  color: #9fa1ff;
+  font-family: "Indie Flower", cursive;
+}
+.about-section p {
+  font-size: 1.4rem;
+  font-family: "Nunito", sans-serif;
+  max-width: 650px;
+  color: #556b5d;
+  line-height: 1.7;
 }
