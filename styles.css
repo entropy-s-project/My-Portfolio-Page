@@ -20,45 +20,78 @@ html {
 .both-hands img {
   position: absolute;
 }
-.body-1 {
-  width: 550px;
-  top: 153px;
+.body-1,
+.head,
+.eyes-default,
+.mouth-default,
+.face-sleepy {
+  width: 530px;
+  top: 10px;
   left: 70px;
 }
-.head {
-  width: 500px;
-  top: 5px;
-  left: 100px;
-}
-.eyes-default {
-  width: 265px;
-  top: 105px;
-  left: 215px;
-  transition: transform 0.2s ease;
-  /* display: none; */
-}
-.mouth-default {
-  width: 250px;
-  top: 360px;
-  left: 220px;
-  /* display: none; */
-}
-.face-sleepy{
-  width: 230px;
-  top: 200px;
-  left: 222px;
-  display: none;
-}
-
 .right-hand {
-  width: 250px;
-  top: 452px;
-  left: 70px;
+  width: 530px;
+  top: 10px;
+  left: 60px;
+  animation: right-hand-greeting 1.2s ease;
+  transform-origin: center bottom;
 }
 .left-hand {
-  width: 250px;
-  top: 452px;
-  left: 350px;
+  width: 530px;
+  top: 10px;
+  left: 80px;
+  z-index: 20;
+  animation: left-hand-greeting 1.2s ease;
+  transform-origin: center bottom;
+}
+.face-sleepy {
+  display: none;
+}
+.eyes-default {
+  transition: transform 0.2s ease;
+}
+
+/* CCS GREETING ANIMATION */
+@keyframes head-greeting {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-2deg);
+  }
+  75% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.head,
+.eyes-default {
+  animation: head-greeting 1.2s ease;
+  transform-origin: center;
+}
+@keyframes left-hand-greeting {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes right-hand-greeting {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 /* CSS of Menu */
 .menu-section {
