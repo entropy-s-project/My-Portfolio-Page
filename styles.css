@@ -20,11 +20,48 @@ html {
 .both-hands img {
   position: absolute;
 }
+.hair-hitbox {
+  position: absolute;
+  width: 180px;
+  height: 145px;
+  z-index: 100;
+  top: 80px;
+  left: 170px;
+}
+.face-hitbox {
+  position: absolute;
+  width: 180px;
+  height: 150px;
+  z-index: 100;
+  top: 280px;
+  left: 240px;
+}
+.right-hand-hitbox {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 610px;
+  left: 160px;
+  z-index: 100;
+}
+.left-hand-hitbox {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 610px;
+  left: 420px;
+  z-index: 100;
+}
 .body-1,
 .head,
 .eyes-default,
 .mouth-default,
-.face-sleepy {
+.face-sleepy,
+.head-pat,
+.touch-face,
+.Hi-five,
+.selectportfolio,
+.selectgithub {
   width: 530px;
   top: 10px;
   left: 70px;
@@ -44,11 +81,52 @@ html {
   animation: left-hand-greeting 1.2s ease;
   transform-origin: center bottom;
 }
-.face-sleepy {
+.right-hand,
+.left-hand {
+  transition: opacity 0.2s ease;
+}
+.face-sleepy,
+.head-pat,
+.touch-face,
+.Hi-five,
+.selectportfolio,
+.selectgithub {
+  display: none;
+}
+
+.ZZzz {
+  width: 400px;
+  left: 525px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.suprise-1 {
+  width: 150px;
+  left: 425px;
+  transform: rotate(30deg);
+  display: none;
+}
+.suprise-3 {
+  width: 100px;
+  top: 100px;
+  left: 145px;
+  display: none;
+}
+
+.suprise-2 {
+  width: 100px;
+  top: 350px;
+  left: 470px;
   display: none;
 }
 .eyes-default {
-  transition: transform 0.2s ease;
+  transition: transform 0.1s linear;
+}
+.greeting-hi {
+  width: 300px;
+  left: 525px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 /* CCS GREETING ANIMATION */
@@ -66,8 +144,7 @@ html {
     transform: rotate(0deg);
   }
 }
-.head,
-.eyes-default {
+.head {
   animation: head-greeting 1.2s ease;
   transform-origin: center;
 }
